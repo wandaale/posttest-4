@@ -1,0 +1,165 @@
+print("""
+    ====================================
+    
+                 Avore Cafe                                                                                            
+ 
+    ====================================
+    ----LIST OF FOOD AND DRINK MENU----
+    1. Toast                   : 25.000
+    2. Onion Ring              : 10.000
+    3. Spring Roll             : 25.000
+    4. Fruit Salad             : 35.000
+    5. Chicken Wings           : 40.000
+    6. Thai Tea                : 15.000
+    7. Ovaltine                : 15.000
+    8. Green Tea               : 15.000
+    9. Red Velvet              : 15.000
+    10. Choco Lava Milo        : 20.000
+    ====================================
+    -------------Promo List-------------
+    a. Get Discount Every Purchase
+       3 Drinks at 10%
+    b. Get Discount Every Purchase
+       2 Foods at 5%
+    c. Get Discount Every Payment
+       Via E-Money by 5%
+    d. Get Discount During Weekend
+       by 5%
+    e. Get Discount During Weekdays
+       by 10%
+    ====================================
+    """)
+
+
+
+x = 'y'
+while x == 'y' :
+        menu = [["Toast                 : 25000"],
+                ["Onion Ring            : 10000"],
+                ["Spring Roll           : 25000"],
+                ["Fruit Salad           : 35000"],
+                ["Chicken Wings         : 40000"],
+                ["Thai Tea              : 15000"],
+                ["Ovaltine              : 15000"],
+                ["Green Tea             : 15000"],
+                ["Red Velvet            : 15000"],
+                ["Choco Lava Milo      : 20000"]]
+        
+        print ("WELCOME :)")
+        print ("LIST MAIN MENU :")
+        print ("1. Add Menu From Behind")
+        print ("2. Add Menu From The Middle") 
+        print ("3. Remove Menu From List")
+        print ("4. Delete Menu Items")
+        print ("5. Changing Menu")
+        print ("")
+        choice = int(input("Please Enter Your Choice : "))
+        
+        if choice == 1 :
+            new_menu = []
+            add_menu = str(input("Please Enter The Menu And Price You Want To Add : "))
+            new_menu.append(add_menu)
+            menu.append(new_menu)
+            print ("")
+            print ("")
+            print ("New Menu List :")
+            print ("")
+            print ("-------LIST OF FOOD AND DRINK MENU-------")
+            print ("1.", menu [0][0])
+            print ("2.", menu [1][0])
+            print ("3.", menu [2][0])
+            print ("4.", menu [3][0])
+            print ("5.", menu [4][0])
+            print ("6.", menu [5][0])
+            print ("7.", menu [6][0])
+            print ("8.", menu [7][0])
+            print ("9.", menu [8][0])
+            print ("10.", menu [9][0])
+            print ("11.", menu [10][0])
+            print ("")
+        elif choice == 2 :
+            new_menu = []
+            add_menu = str(input("Please Enter the Menu and Price You Want to Add : "))
+            new_menu.insert(0, add_menu)
+            menu.insert(5, new_menu)
+            print ("")
+            print ("")
+            print ("New Menu List :")
+            print ("")
+            print ("-------LIST OF FOOD AND DRINK MENU-------")
+            print ("1.", menu [0][0])
+            print ("2.", menu [1][0])
+            print ("3.", menu [2][0])
+            print ("4.", menu [3][0])
+            print ("5.", menu [4][0])
+            print ("6.", menu [5][0])
+            print ("7.", menu [6][0])
+            print ("8.", menu [7][0])
+            print ("9.", menu [8][0])
+            print ("10.", menu [9][0])
+            print ("11.", menu [10][0])
+            print ("")
+        elif choice == 3 :
+            delete_menu = int(input("Please Select The Menu You Want To Delete : "))
+            delete = delete_menu - 1
+            del menu[delete]
+            print ("")
+            print ("")
+            print ("New Menu List :")
+            print ("")
+            print ("-------LIST OF FOOD AND DRINK MENU-------")
+            print ("1.", menu [0][0])
+            print ("2.", menu [1][0])
+            print ("3.", menu [2][0])
+            print ("4.", menu [3][0])
+            print ("5.", menu [4][0])
+            print ("6.", menu [5][0])
+            print ("7.", menu [6][0])
+            print ("8.", menu [7][0])
+            print ("9.", menu [8][0])
+            print ("")
+        elif choice == 4 :
+            remove_menu = int(input("Please Select The Menu You Want To Delete : "))
+            remove = remove_menu - 1
+            menu.remove(menu[remove])
+            print ("")
+            print ("")
+            print ("New Menu List :")
+            print ("")
+            print ("-------LIST OF FOOD AND DRINK MENU-------")
+            print ("1.", menu [0][0])
+            print ("2.", menu [1][0])
+            print ("3.", menu [2][0])
+            print ("4.", menu [3][0])
+            print ("5.", menu [4][0])
+            print ("6.", menu [5][0])
+            print ("7.", menu [6][0])
+            print ("8.", menu [7][0])
+            print ("9.", menu [8][0])
+            print ("")
+        elif choice == 5 :
+            edit_menu = int(input("Please Select The Menu You Want To Change : "))
+            new_menu = input ("Please Enter A New Menu : ")
+            menu[edit_menu] = [new_menu]
+            print ("")
+            print ("New Menu List :")
+            print ("")
+            print ("-------LIST OF FOOD AND DRINK MENU-------")
+            print ("1.", menu [0][0])
+            print ("2.", menu [1][0])
+            print ("3.", menu [2][0])
+            print ("4.", menu [3][0])
+            print ("5.", menu [4][0])
+            print ("6.", menu [5][0])
+            print ("7.", menu [6][0])
+            print ("8.", menu [7][0])
+            print ("9.", menu [8][0])
+            print ("10.", menu [9][0])
+            print ("")
+
+        else :
+            print("Option Not Available")
+    
+        x = str(input("Do You Want To Return To The Main Menu? "))
+        
+print("THANK YOU")
